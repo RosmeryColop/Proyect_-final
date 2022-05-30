@@ -14,7 +14,7 @@ namespace Ej_15
         {
             FormsAuthentication.SignOut();
             //FormsAuthentication.RedirectToLoginPage();
-            Response.Redirect("Default,aspx");
+            Response.Redirect("Default.aspx");
         }
     }
 }
