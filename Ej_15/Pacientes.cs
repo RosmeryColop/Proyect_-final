@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Ej_15
 {
-    public class Pacietes
+    public class Pacientes
     {
         public int NIT { get; set; }
         public string Nombre { get; set; }
