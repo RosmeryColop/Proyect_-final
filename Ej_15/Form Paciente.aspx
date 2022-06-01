@@ -31,11 +31,11 @@
         <asp:TextBox ID="TextBoxPacienteTelefono" runat="server" Width="170px"></asp:TextBox>
     </p>
     <p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Button1" runat="server" Height="50px" Text="Ingresar NUEVO Paciente" Width="250px" />
-    </p>
-    <p>
         &nbsp;</p>
+    <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="ButtonINGRESAR" runat="server" Height="50px" OnClick="Button1_Click" style="font-weight: 700; font-size: medium; font-style: italic" Text="Ingresar NUEVO Paciente" Width="250px" />
+    </p>
     <p>
         &nbsp;</p>
 </asp:Content>
