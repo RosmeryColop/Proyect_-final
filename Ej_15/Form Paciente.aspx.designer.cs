@@ -33,15 +33,6 @@ namespace Ej_15
         protected global::System.Web.UI.WebControls.TextBox TextBoxPacienteApellido;
 
         /// <summary>
-        /// Control TextBoxPacienteDireccion.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxPacienteDireccion;
-
-        /// <summary>
         /// Control TextBoxPacienteNacimiento.
         /// </summary>
         /// <remarks>
@@ -49,6 +40,15 @@ namespace Ej_15
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxPacienteNacimiento;
+
+        /// <summary>
+        /// Control TextBoxPacienteDireccion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxPacienteDireccion;
 
         /// <summary>
         /// Control TextBoxPacienteNIT.
@@ -76,5 +76,77 @@ namespace Ej_15
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ButtonINGRESAR;
+
+        /// <summary>
+        /// Control TextBoxBuscarNIT.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxBuscarNIT;
+
+        /// <summary>
+        /// Control ButtonBUSCAR.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonBUSCAR;
+
+        /// <summary>
+        /// Control TextBoxNombreBuscado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxNombreBuscado;
+
+        /// <summary>
+        /// Control TextBoxApellidoBuscado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxApellidoBuscado;
+
+        /// <summary>
+        /// Control TextBoxFechaBuscada.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxFechaBuscada;
+
+        /// <summary>
+        /// Control TextBoxDireccionBuscada.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxDireccionBuscada;
+
+        /// <summary>
+        /// Control TextBoxTelefonoBuscado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxTelefonoBuscado;
+
+        /// <summary>
+        /// Control ButtonACTUALIZAR.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonACTUALIZAR;
     }
 }

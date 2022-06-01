@@ -134,6 +134,8 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
+    font-weight: 700;
+    font-style: italic;
 }
 button[disabled],
 html input[disabled] {
@@ -1093,7 +1095,7 @@ button,
 select,
 textarea {
   font-family: inherit;
-  font-size: inherit;
+  font-size: medium;
   line-height: inherit;
 }
 a {

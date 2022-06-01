@@ -121,6 +121,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Login.aspx" />
     <Content Include="ClassDiagram1.cd" />
+    <Content Include="pacientes.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Logout.aspx" />
     <Content Include="Scripts\bootstrap.js" />
