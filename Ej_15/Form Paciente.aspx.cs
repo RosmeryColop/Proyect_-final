@@ -51,11 +51,11 @@ namespace Ej_15
 
         protected void ButtonACTUALIZAR_Click(object sender, EventArgs e)
         {
-            foreach (var paciente in pacientesTemp)
-            {
-                int buscar = pacientesTemp.FindIndex(c => c.NIT == Convert.ToInt32(TextBoxBuscarNIT.Text));
+            //foreach (var paciente in pacientesTemp)
+            //{
+                Pacientes paciente = pacientesTemp.Find(c => c.NIT == Convert.ToInt32(TextBoxBuscarNIT.Text));
 
-                if (buscar > -1)
+                if (paciente != null)
                 {
                     paciente.Nombre = TextBoxNombreBuscado.Text;
                     paciente.Apellido = TextBoxApellidoBuscado.Text;
@@ -71,9 +71,9 @@ namespace Ej_15
                     TextBoxApellidoBuscado.Text = "";
                     TextBoxFechaBuscada.Text = "";
                     TextBoxDireccionBuscada.Text = "";
-                    TextBoxPacienteTelefono.Text = "";
+                    TextBoxTelefonoBuscado.Text = "";
                 }
-            }
+            //}
         }
 
         protected void ButtonBUSCAR_Click(object sender, EventArgs e)
@@ -87,7 +87,8 @@ namespace Ej_15
                 TextBoxApellidoBuscado.Text = paciente.Apellido;
                 TextBoxFechaBuscada.Text = paciente.Fecha_nacimiento;
                 TextBoxDireccionBuscada.Text = paciente.Direccion;
-                TextBoxPacienteTelefono.Text = Convert.ToString(paciente.Telefono);
+                TextBoxTelefonoBuscado.Text = Convert.ToString(paciente.Telefono);
+                encontrado = true;
             }
 
             if(!encontrado)
@@ -98,7 +99,7 @@ namespace Ej_15
                 TextBoxApellidoBuscado.Text = "";
                 TextBoxFechaBuscada.Text = "";
                 TextBoxDireccionBuscada.Text = "";
-                TextBoxPacienteTelefono.Text = "";
+                TextBoxTelefonoBuscado.Text = "";
             }
         }
     }
