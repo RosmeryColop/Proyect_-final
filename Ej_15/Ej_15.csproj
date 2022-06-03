@@ -109,6 +109,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Form Historial Paciente.aspx" />
     <Content Include="Form Paciente.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -182,6 +183,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form Historial Paciente.aspx.cs">
+      <DependentUpon>Form Historial Paciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form Historial Paciente.aspx.designer.cs">
+      <DependentUpon>Form Historial Paciente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Form Paciente.aspx.cs">
       <DependentUpon>Form Paciente.aspx</DependentUpon>

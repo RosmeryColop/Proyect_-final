@@ -23,7 +23,7 @@
 </p>
 <p>
 &nbsp;&nbsp;&nbsp;&nbsp; Dirección:&nbsp;&nbsp;
-    <asp:TextBox ID="TextBoxPacienteDireccion" runat="server" Width="425px"></asp:TextBox>
+    <asp:TextBox ID="TextBoxPacienteDireccion" runat="server" Width="550px"></asp:TextBox>
 </p>
 <p>
 &nbsp;&nbsp;&nbsp;&nbsp; NIT:&nbsp;&nbsp;
@@ -48,7 +48,7 @@
     <p>
         &nbsp;</p>
     <p>
-        <strong>&nbsp;&nbsp;&nbsp;&nbsp; Buscar por NIT del Paciente:</strong>&nbsp;&nbsp; &nbsp;<asp:TextBox ID="TextBoxCodigoBuscado" runat="server" Width="130px"></asp:TextBox>
+        <strong>&nbsp;&nbsp;&nbsp;&nbsp; Buscar por Código del Paciente:</strong>&nbsp;&nbsp; &nbsp;<asp:TextBox ID="TextBoxCodigoBuscado" runat="server" Width="130px"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="ButtonBUSCAR" runat="server" Height="35px" OnClick="ButtonBUSCAR_Click" Text="BUSCAR Paciente" Width="211px" />
 </p>

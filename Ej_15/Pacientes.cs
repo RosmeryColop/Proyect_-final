@@ -14,6 +14,5 @@ namespace Ej_15
         public string Direccion { get; set; }
         public string Fecha_nacimiento { get; set; }
         public int Telefono{ get; set; }
-        public int num { get; set; }
     }
 }
