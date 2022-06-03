@@ -19,8 +19,6 @@ namespace Ej_15
             string json = jsonStream.ReadToEnd();
             jsonStream.Close();
             pacientesTemp = JsonConvert.DeserializeObject<List<Pacientes>>(json);
-
-           
         }
         private void GUARDAR()
         {
@@ -31,7 +29,7 @@ namespace Ej_15
         protected void Button1_Click(object sender, EventArgs e)
         {
             Pacientes paciente = new Pacientes();
-            paciente.Codigo = TextBoxPacienteCodigo.Text.ToUpper();
+            paciente.Codigo = TextBoxPacienteCodigo.Text;
             paciente.Nombre = TextBoxPacienteNombre.Text;
             paciente.Apellido = TextBoxPacienteApellido.Text;
             paciente.Direccion = TextBoxPacienteDireccion.Text;
@@ -54,7 +52,7 @@ namespace Ej_15
         {
             //foreach (var paciente in pacientesTemp)
             //{
-                Pacientes paciente = pacientesTemp.Find(c => c.Codigo == TextBoxCodigoBuscado.Text.ToUpper());
+                Pacientes paciente = pacientesTemp.Find(c => c.Codigo == TextBoxCodigoBuscado.Text);
 
                 if (paciente != null)
                 {
