@@ -15,6 +15,15 @@ namespace Ej_15
     {
 
         /// <summary>
+        /// Control TextBoxPacienteCodigo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxPacienteCodigo;
+
+        /// <summary>
         /// Control TextBoxPacienteNombre.
         /// </summary>
         /// <remarks>
@@ -78,13 +87,13 @@ namespace Ej_15
         protected global::System.Web.UI.WebControls.Button ButtonINGRESAR;
 
         /// <summary>
-        /// Control TextBoxBuscarNIT.
+        /// Control TextBoxCodigoBuscado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxBuscarNIT;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxCodigoBuscado;
 
         /// <summary>
         /// Control ButtonBUSCAR.
@@ -130,6 +139,15 @@ namespace Ej_15
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxDireccionBuscada;
+
+        /// <summary>
+        /// Control TextBoxBuscarNIT.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxBuscarNIT;
 
         /// <summary>
         /// Control TextBoxTelefonoBuscado.

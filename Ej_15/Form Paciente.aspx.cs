@@ -19,8 +19,9 @@ namespace Ej_15
             string json = jsonStream.ReadToEnd();
             jsonStream.Close();
             pacientesTemp = JsonConvert.DeserializeObject<List<Pacientes>>(json);
-        }
 
+           
+        }
         private void GUARDAR()
         {
             string json = JsonConvert.SerializeObject(pacientesTemp);
@@ -30,17 +31,18 @@ namespace Ej_15
         protected void Button1_Click(object sender, EventArgs e)
         {
             Pacientes paciente = new Pacientes();
+            paciente.Codigo = TextBoxPacienteCodigo.Text.ToUpper();
             paciente.Nombre = TextBoxPacienteNombre.Text;
             paciente.Apellido = TextBoxPacienteApellido.Text;
             paciente.Direccion = TextBoxPacienteDireccion.Text;
             paciente.Fecha_nacimiento = TextBoxPacienteNacimiento.Text;
-            paciente.NIT = Convert.ToInt32(TextBoxPacienteNIT.Text);
+            paciente.NIT = TextBoxPacienteNIT.Text;
             paciente.Telefono = Convert.ToInt32(TextBoxPacienteTelefono.Text);
-
             pacientesTemp.Add(paciente);
 
             GUARDAR();
 
+            TextBoxPacienteCodigo.Text = "";
             TextBoxPacienteNombre.Text = "";
             TextBoxPacienteApellido.Text = "";
             TextBoxPacienteDireccion.Text = "";
@@ -48,12 +50,11 @@ namespace Ej_15
             TextBoxPacienteNIT.Text = "";
             TextBoxPacienteTelefono.Text = "";
         }
-
         protected void ButtonACTUALIZAR_Click(object sender, EventArgs e)
         {
             //foreach (var paciente in pacientesTemp)
             //{
-                Pacientes paciente = pacientesTemp.Find(c => c.NIT == Convert.ToInt32(TextBoxBuscarNIT.Text));
+                Pacientes paciente = pacientesTemp.Find(c => c.Codigo == TextBoxCodigoBuscado.Text.ToUpper());
 
                 if (paciente != null)
                 {
@@ -61,6 +62,7 @@ namespace Ej_15
                     paciente.Apellido = TextBoxApellidoBuscado.Text;
                     paciente.Direccion = TextBoxDireccionBuscada.Text;
                     paciente.Fecha_nacimiento = TextBoxFechaBuscada.Text;
+                    paciente.NIT = TextBoxBuscarNIT.Text;
                     paciente.Telefono = Convert.ToInt32(TextBoxTelefonoBuscado.Text);
 
                     GUARDAR();
@@ -72,21 +74,22 @@ namespace Ej_15
                     TextBoxFechaBuscada.Text = "";
                     TextBoxDireccionBuscada.Text = "";
                     TextBoxTelefonoBuscado.Text = "";
+                    TextBoxCodigoBuscado.Text = "";
                 }
             //}
         }
-
         protected void ButtonBUSCAR_Click(object sender, EventArgs e)
         {
             bool encontrado = false;
 
-            Pacientes paciente = pacientesTemp.Find(c => c.NIT == Convert.ToInt32(TextBoxBuscarNIT.Text));
+            Pacientes paciente = pacientesTemp.Find(c => c.Codigo == TextBoxCodigoBuscado.Text);
             if (paciente != null)
             {
                 TextBoxNombreBuscado.Text = paciente.Nombre;
                 TextBoxApellidoBuscado.Text = paciente.Apellido;
                 TextBoxFechaBuscada.Text = paciente.Fecha_nacimiento;
                 TextBoxDireccionBuscada.Text = paciente.Direccion;
+                TextBoxBuscarNIT.Text = paciente.NIT;
                 TextBoxTelefonoBuscado.Text = Convert.ToString(paciente.Telefono);
                 encontrado = true;
             }
@@ -102,5 +105,44 @@ namespace Ej_15
                 TextBoxTelefonoBuscado.Text = "";
             }
         }
+        //private int[] CalcularNumeros()
+        //{
+        //    int[] numeros = new int[5];
+        //    Random r = new Random();
+
+        //    int auxiliar = 0;
+        //    int contador = 0;
+
+        //    for (int i = 0; i < 5; i++)
+        //    {
+        //        auxiliar = r.Next(1, 5);
+        //        bool continuar = false;
+
+        //        while (!continuar)
+        //        {
+        //            for (int j = 0; j <= contador; j++)
+        //            {
+        //                if (auxiliar == numeros[j])
+        //                {
+        //                    continuar = true;
+        //                    j = contador;
+        //                }
+        //            }
+
+        //            if (continuar)
+        //            {
+        //                auxiliar = r.Next(1, 75);
+        //                continuar = false;
+        //            }
+        //            else
+        //            {
+        //                continuar = true;
+        //                numeros[contador] = auxiliar;
+        //                contador++;
+        //            }
+        //        }
+        //    }
+        //    return numeros;
+        //}
     }
 }

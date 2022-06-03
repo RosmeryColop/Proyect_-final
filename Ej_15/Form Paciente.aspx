@@ -1,11 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Form Paciente.aspx.cs" Inherits="Ej_15.Form_Paciente" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Pacientes</h1>
-<p>
-    &nbsp;</p>
+    <p>&nbsp;</p>
 <h3>Ingreso de nuevos pacientes:</h3>
 <p>
     &nbsp;</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Código del Paciente:&nbsp;&nbsp;
+    <asp:TextBox ID="TextBoxPacienteCodigo" runat="server" Width="130px"></asp:TextBox>
+</p>
 <p>
 &nbsp;&nbsp;&nbsp;&nbsp; Nombre:&nbsp;&nbsp;
     <asp:TextBox ID="TextBoxPacienteNombre" runat="server" Width="300px"></asp:TextBox>
@@ -45,7 +48,7 @@
     <p>
         &nbsp;</p>
     <p>
-        <strong>&nbsp;&nbsp;&nbsp;&nbsp; Buscar por NIT del Paciente:</strong>&nbsp;&nbsp; &nbsp;<asp:TextBox ID="TextBoxBuscarNIT" runat="server" Width="200px"></asp:TextBox>
+        <strong>&nbsp;&nbsp;&nbsp;&nbsp; Buscar por NIT del Paciente:</strong>&nbsp;&nbsp; &nbsp;<asp:TextBox ID="TextBoxCodigoBuscado" runat="server" Width="130px"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="ButtonBUSCAR" runat="server" Height="35px" OnClick="ButtonBUSCAR_Click" Text="BUSCAR Paciente" Width="211px" />
 </p>
@@ -64,6 +67,9 @@
 </p>
     <p>
 &nbsp;&nbsp;&nbsp;&nbsp; Dirección:&nbsp;&nbsp; &nbsp;<asp:TextBox ID="TextBoxDireccionBuscada" runat="server" Width="425px"></asp:TextBox>
+</p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp; NIT:&nbsp;&nbsp; &nbsp;<asp:TextBox ID="TextBoxBuscarNIT" runat="server" Width="200px"></asp:TextBox>
 </p>
     <p>
 &nbsp;&nbsp;&nbsp;&nbsp; Teléfono:&nbsp;&nbsp;

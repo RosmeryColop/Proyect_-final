@@ -1,35 +1,23 @@
 [
   {
-    "NIT": 1234567,
+    "Codigo": "A1",
     
-    "Nombre": "Pawel",
-    "Apellido": "Reynoso Pedregal",
+    "NIT": "123456-7",
+    "Nombre": "Pawel Alessandro",
+    "Apellido": "Reynoso Marquez",
     "Direccion": "Colonia los Celajes, zona 4, Santa Cruz del Quiché",
     "Fecha_nacimiento": "24 de julio de 2002",
-    "Telefono": 47498305
+    "Telefono": 47498345,
+    "num": 0
   },
   {
-    "NIT": 7894561,
-    "Nombre": "Rosmery Elizabeth",
-    "Apellido": "Thomas Colop",
-    "Direccion": "Cantel Pachaj, Quetzaltenango",
-    "Fecha_nacimiento": "6 de enero de 2004",
-    "Telefono": 45783246
-  },
-  {
-    "NIT": 9638527,
-    "Nombre": "Josue ",
-    "Apellido": "Robles Gonzáles",
-    "Direccion": "Casa 7-12, zona 5, Totonicapán",
-    "Fecha_nacimiento": "9 de septiembre de 2002",
-    "Telefono": 12567849
-  },
-  {
-    "NIT": 123456,
-    "Nombre": "a1",
-    "Apellido": "aa1",
+    "Codigo": "A12",
+    "NIT": "012345-6",
+    "Nombre": "as",
+    "Apellido": "sd",
     "Direccion": "abcd efgh",
     "Fecha_nacimiento": "23 aaa",
-    "Telefono": 85296307
+    "Telefono": 47498312,
+    "num": 0
   }
 ]

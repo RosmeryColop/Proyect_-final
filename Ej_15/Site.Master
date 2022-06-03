@@ -54,7 +54,7 @@
                         <li><a runat="server" href="~/">Inicio</a></li>
                         <li><a runat="server" href="~/About">Acerca de</a></li>
                         <li><a runat="server" href="~/Contact">Contacto</a></li>
-                        <li><a runat="server" href="~/Form Paciente">Nuevo Paciente</a></li>
+                        <li><a runat="server" href="~/Form Paciente">Pacientes</a></li>
                          <li><a runat="server" href="~/Logout">Cerrar</a></li>
                     </ul>
                 </div>
