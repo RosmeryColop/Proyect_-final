@@ -9,6 +9,7 @@ using System.Web.UI.WebControls;
 
 namespace Ej_15
 {
+    //borrar los datos cuando son agregados
     public partial class Cita : System.Web.UI.Page
     {
         static List<Agenda> Agendas = new List<Agenda>();
@@ -16,13 +17,21 @@ namespace Ej_15
         static List<string> HorasDisponibles = new List<string>();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            ButtonAgregarCita.Enabled = false;
         }
 
         protected void Calendar_SelectionChanged(object sender, EventArgs e)
         {
             leer();
             InicializarHoras();
+            BuscarHoras();
+            MostrarHoras();
+
+            if (TextBoxNIT.Text != "") ButtonAgregarCita.Enabled = true;
+            else MessageBox.Show(al.Apellido);
+        }
+        public void BuscarHoras()
+        {
             Auxiliar = Agendas.FindAll(c => c.Fecha == Calendar1.SelectedDate.ToString("dd/MM"));
             for (int i = 0; i < Auxiliar.Count; i++)
             {
@@ -31,10 +40,15 @@ namespace Ej_15
                     if (Auxiliar[i].Hora == HorasDisponibles[j])
                         HorasDisponibles.RemoveAt(j);
                 }
-                
+
             }
+        }
+        public void MostrarHoras()
+        {
             DropDownListHora.DataSource = null;
             DropDownListHora.DataBind();
+
+            if (HorasDisponibles.Count == 0) HorasDisponibles.Add("SIN HORAS DISPONIBLES");
 
             DropDownListHora.DataSource = HorasDisponibles;
             DropDownListHora.DataBind();
@@ -75,6 +89,10 @@ namespace Ej_15
             agenda.Hora = DropDownListHora.SelectedValue;
             Agendas.Add(agenda);
             guardar();
+            Calendar1.SelectedDate = DateTime.Now;
+            TextBoxNIT.Text = null;
+            BuscarHoras();
+            MostrarHoras();
         }
     }
 }
