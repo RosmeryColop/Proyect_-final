@@ -17,7 +17,6 @@ namespace Ej_15
         static List<string> HorasDisponibles = new List<string>();
         protected void Page_Load(object sender, EventArgs e)
         {
-            ButtonAgregarCita.Enabled = false;
         }
 
         protected void Calendar_SelectionChanged(object sender, EventArgs e)
@@ -27,8 +26,6 @@ namespace Ej_15
             BuscarHoras();
             MostrarHoras();
 
-            if (TextBoxNIT.Text != "") ButtonAgregarCita.Enabled = true;
-            else MessageBox.Show(al.Apellido);
         }
         public void BuscarHoras()
         {
@@ -83,16 +80,19 @@ namespace Ej_15
 
         protected void ButtonAgregarCita_Click(object sender, EventArgs e)
         {
-            Agenda agenda = new Agenda();
-            agenda.NIT = TextBoxNIT.Text;
-            agenda.Fecha = Calendar1.SelectedDate.ToString("dd/MM");
-            agenda.Hora = DropDownListHora.SelectedValue;
-            Agendas.Add(agenda);
-            guardar();
-            Calendar1.SelectedDate = DateTime.Now;
-            TextBoxNIT.Text = null;
-            BuscarHoras();
-            MostrarHoras();
+            if (TextBoxNIT.Text != "")
+            {
+                Agenda agenda = new Agenda();
+                agenda.NIT = TextBoxNIT.Text;
+                agenda.Fecha = Calendar1.SelectedDate.ToString("dd/MM");
+                agenda.Hora = DropDownListHora.SelectedValue;
+                Agendas.Add(agenda);
+                guardar();
+                Calendar1.SelectedDate = DateTime.Now;
+                TextBoxNIT.Text = null;
+                BuscarHoras();
+                MostrarHoras();
+            }
         }
     }
 }
