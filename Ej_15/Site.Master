@@ -55,6 +55,10 @@
                         <li><a runat="server" href="~/About">Acerca de</a></li>
                         <li><a runat="server" href="~/Contact">Contacto</a></li>
                          <li><a runat="server" href="~/Logout">Cerrar</a></li>
+                         <li><a runat="server" href="~/Medicamentos">Medicamento</a></li>
+                        <li><a runat="server" href="~/Historial">Historial</a></li>
+                        <li><a runat="server" href="~/Mostrar_historial">HistorialMostrar</a></li>
+
                     </ul>
                 </div>
             </div>

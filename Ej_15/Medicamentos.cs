@@ -16,5 +16,6 @@ namespace Ej_15
 
     public class Enfermedades
     {
+        public string Nombre { get; set; }
     }
 }

@@ -126,8 +126,12 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Login.aspx" />
     <Content Include="ClassDiagram1.cd" />
+    <Content Include="Historial.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Logout.aspx" />
+    <Content Include="Medicamentos.aspx" />
+    <Content Include="Medicamentps_Editar.aspx" />
+    <Content Include="Mostrar_historial.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -198,7 +202,28 @@
     <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Medicamentos.aspx.cs">
+      <DependentUpon>Medicamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medicamentos.aspx.designer.cs">
+      <DependentUpon>Medicamentos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Medicamentos.cs" />
+    <Compile Include="Medicamentps_Editar.aspx.cs">
+      <DependentUpon>Medicamentps_Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medicamentps_Editar.aspx.designer.cs">
+      <DependentUpon>Medicamentps_Editar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mostrar_historial.aspx.cs">
+      <DependentUpon>Mostrar_historial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mostrar_historial.aspx.designer.cs">
+      <DependentUpon>Mostrar_historial.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pacietes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sintomas.cs" />
@@ -229,6 +254,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Historial.aspx.cs">
+      <DependentUpon>Historial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Historial.aspx.designer.cs">
+      <DependentUpon>Historial.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
