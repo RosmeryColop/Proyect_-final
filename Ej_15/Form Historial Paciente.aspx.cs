@@ -37,8 +37,6 @@ namespace Ej_15
             Pacientes paciente = pacientesTemp.Find(c => c.Codigo == TextBox1.Text);
             if (paciente != null)
             {
-                //Response.Write("<script>alert('Paciente Aceptado')</script>");
-                //Response.Redirect("HistorialPaciente.aspx");
                 nit = paciente.NIT;
                 Label1.Text = nit;
 
@@ -48,6 +46,7 @@ namespace Ej_15
                 GUARDARHISTORIAL();
                 Label2.Text = nit;
                 encontrado = true;
+                Response.Redirect("HistorialPaciente.aspx");
             }
 
             if (!encontrado)
@@ -59,8 +58,6 @@ namespace Ej_15
         protected void Button2_Click(object sender, EventArgs e)
         {
             
-
-            Response.Redirect("HistorialPaciente.aspx");
         }
     }
 }

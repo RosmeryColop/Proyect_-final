@@ -23,7 +23,7 @@ namespace Ej_15
 
             foreach(Historialpaciente historial in historialTemp)
             {
-                Label1.Text = historial.NIT;
+                LabelNIT.Text = historial.NIT;
             }
         }
     }

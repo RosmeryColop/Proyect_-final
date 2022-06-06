@@ -51,9 +51,7 @@ namespace Ej_15
         }
         protected void ButtonACTUALIZAR_Click(object sender, EventArgs e)
         {
-            //foreach (var paciente in pacientesTemp)
-            //{
-                Pacientes paciente = pacientesTemp.Find(c => c.Codigo == TextBoxCodigoBuscado.Text);
+            Pacientes paciente = pacientesTemp.Find(c => c.Codigo == TextBoxCodigoBuscado.Text);
 
                 if (paciente != null)
                 {
@@ -75,7 +73,6 @@ namespace Ej_15
                     TextBoxTelefonoBuscado.Text = "";
                     TextBoxCodigoBuscado.Text = "";
                 }
-            //}
         }
         protected void ButtonBUSCAR_Click(object sender, EventArgs e)
         {
@@ -104,44 +101,5 @@ namespace Ej_15
                 TextBoxTelefonoBuscado.Text = "";
             }
         }
-        //private int[] CalcularNumeros()
-        //{
-        //    int[] numeros = new int[5];
-        //    Random r = new Random();
-
-        //    int auxiliar = 0;
-        //    int contador = 0;
-
-        //    for (int i = 0; i < 5; i++)
-        //    {
-        //        auxiliar = r.Next(1, 5);
-        //        bool continuar = false;
-
-        //        while (!continuar)
-        //        {
-        //            for (int j = 0; j <= contador; j++)
-        //            {
-        //                if (auxiliar == numeros[j])
-        //                {
-        //                    continuar = true;
-        //                    j = contador;
-        //                }
-        //            }
-
-        //            if (continuar)
-        //            {
-        //                auxiliar = r.Next(1, 75);
-        //                continuar = false;
-        //            }
-        //            else
-        //            {
-        //                continuar = true;
-        //                numeros[contador] = auxiliar;
-        //                contador++;
-        //            }
-        //        }
-        //    }
-        //    return numeros;
-        //}
     }
 }

@@ -10,7 +10,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <h1>Historial del Paciente</h1>
+            <p style="margin-left: 80px">
+                NIT del Paciente:
+                <asp:Label ID="LabelNIT" runat="server" Text="&quot;&quot;"></asp:Label>
+            </p>
         </div>
     </form>
 </body>
