@@ -12,6 +12,9 @@ namespace Ej_15
     public partial class Form_Historial_Paciente : System.Web.UI.Page
     {
         static List<Pacientes> pacientesTemp = new List<Pacientes>();
+        static List<Historialpaciente> historialTemp = new List<Historialpaciente>();
+
+        string nit = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             string archivo = Server.MapPath("pacientes.json");
@@ -22,7 +25,7 @@ namespace Ej_15
         }
         private void GUARDARHISTORIAL()
         {
-            string json = JsonConvert.SerializeObject(pacientesTemp);
+            string json = JsonConvert.SerializeObject(historialTemp);
             string archivo = Server.MapPath("historialpaciente.json");
             System.IO.File.WriteAllText(archivo, json);
         }
@@ -34,16 +37,30 @@ namespace Ej_15
             Pacientes paciente = pacientesTemp.Find(c => c.Codigo == TextBox1.Text);
             if (paciente != null)
             {
-                encontrado = true;
-                paciente.NIT = paciente.NIT;
+                //Response.Write("<script>alert('Paciente Aceptado')</script>");
+                //Response.Redirect("HistorialPaciente.aspx");
+                nit = paciente.NIT;
+                Label1.Text = nit;
+
+                Historialpaciente historial = new Historialpaciente();
+                historial.NIT = nit;
+                historialTemp.Add(historial);
                 GUARDARHISTORIAL();
-                Response.Redirect("mipagina.aspx");
+                Label2.Text = nit;
+                encontrado = true;
             }
 
             if (!encontrado)
             {
                 Response.Write("<script>alert('NO SE ENCUENTRA EL PACIENTE!')</script>");
             }
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            
+
+            Response.Redirect("HistorialPaciente.aspx");
         }
     }
 }

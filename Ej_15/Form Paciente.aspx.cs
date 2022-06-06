@@ -29,6 +29,7 @@ namespace Ej_15
         protected void Button1_Click(object sender, EventArgs e)
         {
             Pacientes paciente = new Pacientes();
+            Historialpaciente historial = new Historialpaciente();
             paciente.Codigo = TextBoxPacienteCodigo.Text;
             paciente.Nombre = TextBoxPacienteNombre.Text;
             paciente.Apellido = TextBoxPacienteApellido.Text;

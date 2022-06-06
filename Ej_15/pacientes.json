@@ -1,11 +1,1 @@
-[
-  {
-    "Codigo": "a1",
-    "NIT": "102631-5",
-    "Nombre": "Rosmery Elizabeth",
-    "Apellido": "Thomas Colop",
-    "Direccion": "Cantel Pachaj, Quetzaltenango",
-    "Fecha_nacimiento": "6 de enero de 2004",
-    "Telefono": 47109451
-  }
-]
+[{"Codigo":"a1","NIT":"102631-5","Nombre":"Rosmery Elizabeth","Apellido":"Thomas Colop","Direccion":"Cantel Pachaj, Quetzaltenango","Fecha_nacimiento":"6 de enero de 2004","Telefono":47109451},{"Codigo":"a12","NIT":"123956-7","Nombre":"Pawel Alessandro","Apellido":"Reynoso Marquez","Direccion":"Colonia los Celajes, zona 4, Santa Cruz del Quiché","Fecha_nacimiento":"24 de julio de 2002","Telefono":47498312},{"Codigo":"a123","NIT":"789456-1","Nombre":"Josue Rubén","Apellido":"Robles Gonzáles","Direccion":"Casa 7-12, zona 5, Totonicapán","Fecha_nacimiento":"9 de septiembre de 2002","Telefono":12345689}]
