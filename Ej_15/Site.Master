@@ -57,6 +57,10 @@
                         <li><a runat="server" href="~/About">Acerca de</a></li>
                         <li><a runat="server" href="~/Contact">Contacto</a></li>
 
+                        <li><a runat="server" href="~/Form Paciente">Pacientes</a></li>
+                        <li><a runat="server" href="~/Form Historial Paciente">Historial de Pacientes</a></li>
+
+
                         <li><a href="~/" class="dropdown-toogle" data-toggle="dropdown" role="button"
                             aria-haspopup="true" aria-expanded="false" >Sintomas <span class="caret"></span></a>
                             <ul class="dropdown-menu">
@@ -68,7 +72,6 @@
                         <li><a runat="server" href="~/Logout">Cerrar</a></li>
                         <li><a runat="server" href="~/Cita">Agregar Cita</a></li>
                        <li><a runat="server" href="~/EliminarCita">Eliminar Cita</a></li>
-
                     </ul>
                 </div>
             </div>

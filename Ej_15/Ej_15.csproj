@@ -114,6 +114,8 @@
 
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Form Historial Paciente.aspx" />
+    <Content Include="Form Paciente.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -123,8 +125,16 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="HistorialPaciente.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="ClassDiagram1.cd" />
+    <Content Include="Historial.aspx" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Medicamentos.aspx" />
+    <Content Include="Medicamentps_Editar.aspx" />
+    <Content Include="Mostrar_historial.aspx" />
+    <Content Include="pacientes.json" />
+    <Content Include="historialpaciente.json" />
     <Content Include="Agenda.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Logout.aspx" />
@@ -200,6 +210,20 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Form Historial Paciente.aspx.cs">
+      <DependentUpon>Form Historial Paciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form Historial Paciente.aspx.designer.cs">
+      <DependentUpon>Form Historial Paciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form Paciente.aspx.cs">
+      <DependentUpon>Form Paciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form Paciente.aspx.designer.cs">
+      <DependentUpon>Form Paciente.aspx</DependentUpon>
+      </Compile>
 
     <Compile Include="EditarSintoma.aspx.cs">
       <DependentUpon>EditarSintoma.aspx</DependentUpon>
@@ -214,10 +238,16 @@
     </Compile>
     <Compile Include="EliminarCita.aspx.designer.cs">
       <DependentUpon>EliminarCita.aspx</DependentUpon>
-
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HistorialPaciente.aspx.cs">
+      <DependentUpon>HistorialPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HistorialPaciente.aspx.designer.cs">
+      <DependentUpon>HistorialPaciente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Historialpaciente.cs" />
     <Compile Include="Logout.aspx.cs">
@@ -227,8 +257,29 @@
     <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Medicamentos.aspx.cs">
+      <DependentUpon>Medicamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medicamentos.aspx.designer.cs">
+      <DependentUpon>Medicamentos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Medicamentos.cs" />
-    <Compile Include="Pacientes.cs" />
+    <Compile Include="Medicamentps_Editar.aspx.cs">
+      <DependentUpon>Medicamentps_Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medicamentps_Editar.aspx.designer.cs">
+      <DependentUpon>Medicamentps_Editar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mostrar_historial.aspx.cs">
+      <DependentUpon>Mostrar_historial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mostrar_historial.aspx.designer.cs">
+      <DependentUpon>Mostrar_historial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pacietes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Receta.cs" />
     <Compile Include="Reporte.aspx.cs">
@@ -273,6 +324,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Historial.aspx.cs">
+      <DependentUpon>Historial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Historial.aspx.designer.cs">
+      <DependentUpon>Historial.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -10,6 +10,12 @@ namespace Ej_15
         public string Cod_Medicamento { get; set; }
         public string Ingredientes { get; set; }
         public string Labratorio { get; set; }
-        public List<string> Enfermedades { get; set; }
+        public List<Enfermedades> enfermedades { get; set; }
+
+    }
+
+    public class Enfermedades
+    {
+        public string Nombre { get; set; }
     }
 }

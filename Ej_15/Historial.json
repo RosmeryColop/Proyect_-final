@@ -1,0 +1,14 @@
+[
+  {
+    "ID": "a1",
+    "NIT": null,
+    "Fecha_Hora": null,
+    "Temperatura": null,
+    "Presion": null,
+    "Sintomas": null,
+    "Diagnostico": null,
+    "Proxima_visita": null,
+    "Costo": null,
+    "Galeria": null
+  }
+]

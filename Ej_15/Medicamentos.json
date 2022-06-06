@@ -1,0 +1,15 @@
+[
+  {
+    "Cod_Medicamento": "a1",
+    "Ingredientes": "b1",
+    "Labratorio": "c1",
+    "enfermedades": [
+      {
+        "Nombre": "d1"
+      },
+      {
+        "Nombre": "e1"
+      }
+    ]
+  }
+]
