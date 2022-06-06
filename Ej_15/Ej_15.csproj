@@ -207,7 +207,7 @@
     </Compile>
     <Compile Include="EditarSintoma.aspx.designer.cs">
       <DependentUpon>EditarSintoma.aspx</DependentUpon>
-
+</Compile>
     <Compile Include="EliminarCita.aspx.cs">
       <DependentUpon>EliminarCita.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
