@@ -1,4 +1,4 @@
-{
+[
     {
         "Codigo": "a1",
         "NIT": "102631-5",
@@ -27,4 +27,4 @@
         "Nombre": "Josue Rubén",
         "Telefono": 12345689
     }
-}
+]
