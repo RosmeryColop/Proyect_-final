@@ -14,7 +14,7 @@ namespace Ej_15
         static List<Pacientes> pacientesTemp = new List<Pacientes>();
         static List<Historialpaciente> historialTemp = new List<Historialpaciente>();
 
-        string nit = "";
+        static string nit = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             string archivo = Server.MapPath("pacientes.json");
@@ -22,6 +22,13 @@ namespace Ej_15
             string json = jsonStream.ReadToEnd();
             jsonStream.Close();
             pacientesTemp = JsonConvert.DeserializeObject<List<Pacientes>>(json);
+            /*
+                         string archivo = Server.MapPath("Agenda.json");
+            StreamReader jsonStream = File.OpenText(archivo);
+            string json = jsonStream.ReadToEnd();
+            jsonStream.Close();
+            Agendas = JsonConvert.DeserializeObject<List<Agenda>>(json);
+             */
         }
         private void GUARDARHISTORIAL()
         {
