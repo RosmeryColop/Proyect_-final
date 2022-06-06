@@ -20,6 +20,12 @@ namespace Ej_15
             jsonStream.Close();
             pacientesTemp = JsonConvert.DeserializeObject<List<Pacientes>>(json);
         }
+        private void GUARDARHISTORIAL()
+        {
+            string json = JsonConvert.SerializeObject(pacientesTemp);
+            string archivo = Server.MapPath("historialpaciente.json");
+            System.IO.File.WriteAllText(archivo, json);
+        }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -29,7 +35,9 @@ namespace Ej_15
             if (paciente != null)
             {
                 encontrado = true;
-                
+                paciente.NIT = paciente.NIT;
+                GUARDARHISTORIAL();
+                Response.Redirect("mipagina.aspx");
             }
 
             if (!encontrado)
