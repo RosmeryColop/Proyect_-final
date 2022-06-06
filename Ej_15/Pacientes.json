@@ -19,12 +19,12 @@
         "Telefono": 47498312
     },
     {
-        "Codigo": "a123",
-        "NIT": "789456-1",
-        "Nombre": "Josue Rubén",
         "Apellido": "Robles Gonzáles",
+        "Codigo": "a123",
         "Direccion": "Casa 7-12, zona 5, Totonicapán",
         "Fecha_nacimiento": "9 de septiembre de 2002",
+        "NIT": "789456-1",
+        "Nombre": "Josue Rubén",
         "Telefono": 12345689
     }
 }
