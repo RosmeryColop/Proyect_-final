@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Cita.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -107,6 +108,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+
+    <Content Include="EditarSintoma.aspx" />
+    <Content Include="EliminarCita.aspx" />
+
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Form Historial Paciente.aspx" />
@@ -125,8 +130,10 @@
     <Content Include="ClassDiagram1.cd" />
     <Content Include="pacientes.json" />
     <Content Include="historialpaciente.json" />
+    <Content Include="Agenda.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Logout.aspx" />
+    <Content Include="Reporte.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -155,6 +162,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Sintomas.aspx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -172,6 +180,17 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+
+    <Compile Include="Clases\EnfermedadCom.cs" />
+
+    <Compile Include="Cita.aspx.cs">
+      <DependentUpon>Cita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cita.aspx.designer.cs">
+      <DependentUpon>Cita.aspx</DependentUpon>
+    </Compile>
+
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -199,6 +218,21 @@
     </Compile>
     <Compile Include="Form Paciente.aspx.designer.cs">
       <DependentUpon>Form Paciente.aspx</DependentUpon>
+      </Compile>
+
+    <Compile Include="EditarSintoma.aspx.cs">
+      <DependentUpon>EditarSintoma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarSintoma.aspx.designer.cs">
+      <DependentUpon>EditarSintoma.aspx</DependentUpon>
+</Compile>
+    <Compile Include="EliminarCita.aspx.cs">
+      <DependentUpon>EliminarCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EliminarCita.aspx.designer.cs">
+      <DependentUpon>EliminarCita.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -222,6 +256,20 @@
     <Compile Include="Pacientes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Receta.cs" />
+    <Compile Include="Reporte.aspx.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte.aspx.designer.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sintomas.aspx.cs">
+      <DependentUpon>Sintomas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sintomas.aspx.designer.cs">
+      <DependentUpon>Sintomas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Sintomas.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
