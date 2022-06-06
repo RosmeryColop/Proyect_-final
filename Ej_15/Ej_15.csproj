@@ -127,6 +127,7 @@
     <Content Include="Login.aspx" />
     <Content Include="ClassDiagram1.cd" />
     <Content Include="Historial.aspx" />
+    <Content Include="pacientes.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Medicamentos.aspx" />
     <Content Include="Medicamentps_Editar.aspx" />
