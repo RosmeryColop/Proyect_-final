@@ -66,8 +66,6 @@
                         </li>
                         <li><a runat="server" href="~/Reporte">Reportes</a></li>
                         <li><a runat="server" href="~/Logout">Cerrar</a></li>
-
-                        <li><a runat="server" href="~/Logout">Cerrar</a></li>
                         <li><a runat="server" href="~/Cita">Agregar Cita</a></li>
                        <li><a runat="server" href="~/EliminarCita">Eliminar Cita</a></li>
 
