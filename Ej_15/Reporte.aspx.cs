@@ -32,7 +32,7 @@ namespace Ej_15
         }
         private void ObtenerEnfermedadesComunes()
         {
-            List<EnfermedadCom> Enfermedad = new List<EnfermedadCom>();
+           /* List<EnfermedadCom> Enfermedad = new List<EnfermedadCom>();
             foreach (var a in Historialpaciente.Diagnostico)
             {
                 EnfermedadCom e = new EnfermedadCom();
@@ -56,7 +56,7 @@ namespace Ej_15
                 enfermedadesComunes.Add(e);
             }
             GridView1.DataSource = enfermedadesComunes;
-            GridView1.DataBind();
+            GridView1.DataBind();*/
         }
         protected void Button1_Click1(object sender, EventArgs e)
         {
