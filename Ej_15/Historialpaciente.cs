@@ -13,7 +13,6 @@ namespace Ej_15
         public string Temperatura { get; set; }
         public string Presion { get; set; }
         public string Sintomas { get; set; }
-
         public string Diagnostico { get; set; }//almacena la enfermedad que diagnostica el doctor
         public string Tratamiento { get; set; }//la cura para la enfermedad
         public List<Receta> Recetas { get; set; }
