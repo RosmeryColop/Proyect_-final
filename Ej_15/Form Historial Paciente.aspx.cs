@@ -55,7 +55,7 @@ namespace Ej_15
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            
+            //vacío
         }
     }
 }
