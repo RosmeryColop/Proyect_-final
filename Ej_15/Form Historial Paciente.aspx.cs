@@ -38,13 +38,11 @@ namespace Ej_15
             if (paciente != null)
             {
                 nit = paciente.NIT;
-                Label1.Text = nit;
 
                 Historialpaciente historial = new Historialpaciente();
                 historial.NIT = nit;
                 historialTemp.Add(historial);
                 GUARDARHISTORIAL();
-                Label2.Text = nit;
                 encontrado = true;
                 Response.Redirect("HistorialPaciente.aspx");
             }
