@@ -10,29 +10,22 @@
   <Class Name="Ej_15.Historialpaciente">
     <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAIAAAAAAAAgCBAACABAAQAEAAAAAAAAAAAAAABAAI=</HashCode>
+      <HashCode>AAAIAAAAAAAAgCBAACABAAQAEAAAAAAQAAAAAAABAAI=</HashCode>
       <FileName>Historialpaciente.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ej_15.Medicamentos">
     <Position X="4.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAABBCAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABCAAAQAAAAIAAAAAAAAAA=</HashCode>
       <FileName>Medicamentos.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Ej_15.Enfermedades" Collapsed="true">
-    <Position X="6.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Medicamentos.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Ej_15.Pacietes">
+  <Class Name="Ej_15.Pacientes">
     <Position X="6.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEACAAgAAIAAAAAAAAAAAAAgAAAAI=</HashCode>
-      <FileName>Pacietes.cs</FileName>
+      <FileName>Pacientes.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ej_15.Sintomas">
