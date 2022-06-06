@@ -8,11 +8,13 @@
     <p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Buscar por Código del Paciente:&nbsp;&nbsp;
         <asp:TextBox ID="TextBox1" runat="server" Width="130px"></asp:TextBox>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
     </p>
-    <p>
-        &nbsp;</p>
-    <p>
-        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" Width="150px" />
+<p>
+    &nbsp;</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" Width="150px" />
     </p>
     <p>
         &nbsp;</p>

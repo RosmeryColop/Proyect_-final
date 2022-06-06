@@ -29,7 +29,7 @@ namespace Ej_15
             if (paciente != null)
             {
                 encontrado = true;
-
+                
             }
 
             if (!encontrado)

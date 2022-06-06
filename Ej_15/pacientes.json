@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "Codigo": "a1",
+    "NIT": "102631-5",
+    "Nombre": "Rosmery Elizabeth",
+    "Apellido": "Thomas Colop",
+    "Direccion": "Cantel Pachaj, Quetzaltenango",
+    "Fecha_nacimiento": "6 de enero de 2004",
+    "Telefono": 47109451
+  }
+]
