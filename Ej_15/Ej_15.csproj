@@ -125,11 +125,11 @@
     <Content Include="Login.aspx" />
     <Content Include="ClassDiagram1.cd" />
     <Content Include="Historial.aspx" />
+    <Content Include="pacientes.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Medicamentos.aspx" />
     <Content Include="Medicamentps_Editar.aspx" />
     <Content Include="Mostrar_historial.aspx" />
-    <Content Include="pacientes.json" />
     <Content Include="historialpaciente.json" />
     <Content Include="Agenda.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -257,7 +257,7 @@
     <Compile Include="Mostrar_historial.aspx.designer.cs">
       <DependentUpon>Mostrar_historial.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pacietes.cs" />
+    <Compile Include="Pacientes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Receta.cs" />
     <Compile Include="Reporte.aspx.cs">

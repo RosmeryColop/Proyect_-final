@@ -13,6 +13,6 @@ namespace Ej_15
         public string Apellido { get; set; }
         public string Direccion { get; set; }
         public string Fecha_nacimiento { get; set; }
-        public int Telefono{ get; set; }
+        public int Telefono { get; set; }
     }
 }
